@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">短信转发</string>
+
+    <string name="section_smtp">SMTP 服务器</string>
+    <string name="hint_host">SMTP 主机，如 smtp.qq.com</string>
+    <string name="hint_port">端口</string>
+    <string name="label_security">加密方式</string>
+    <string name="hint_user">邮箱账号（用户名）</string>
+    <string name="hint_pass">密码 / 授权码</string>
+    <string name="hint_from">发件人地址</string>
+    <string name="hint_to">收件人地址（多个用英文逗号分隔）</string>
+
+    <string name="switch_enabled">启用短信转发</string>
+    <string name="switch_keepalive">常驻后台保活（EMUI 必开）</string>
+    <string name="switch_mark_read">邮件发送成功后将短信标记为已读（需设为默认短信应用）</string>
+
+    <string name="btn_save">保存配置</string>
+    <string name="btn_test">发送测试邮件</string>
+    <string name="btn_perm">申请短信权限</string>
+    <string name="btn_battery">加入电池优化白名单</string>
+    <string name="btn_autostart">打开自启动管理</string>
+    <string name="btn_default_sms">设为默认短信应用（标记已读需要）</string>
+    <string name="btn_requeue_dead">恢复死信队列</string>
+
+    <string name="title_subject_prefix">[短信转发]</string>
+    <string name="msg_saved">配置已保存</string>
+    <string name="msg_fill_all">请先填写主机、账号、密码、发件人和收件人</string>
+    <string name="msg_sending">正在发送…</string>
+    <string name="msg_sent">发送成功</string>
+    <string name="msg_failed">发送失败：%1$s</string>
+    <string name="msg_perm_granted">权限已授予</string>
+    <string name="msg_perm_denied">权限被拒绝，无法接收短信</string>
+    <string name="msg_battery_already">已在白名单中</string>
+    <string name="msg_incomplete_warning">SMTP 配置不完整，短信将被忽略，请先填写完整</string>
+    <string name="msg_default_sms_already">本应用已是默认短信应用</string>
+    <string name="msg_default_sms_hint">设为默认短信应用后，转发成功的短信会被自动标记为已读；未读 = 尚未成功转发</string>
+    <string name="msg_send_not_supported">本应用仅用于短信转发，不支持发送短信</string>
+    <string name="msg_requeued">已恢复 %1$d 封死信，将重新发送</string>
+    <string name="msg_requeued_none">死信队列为空</string>
+    <string name="msg_notification_channel_status">转发服务运行中</string>
+    <string name="notif_title">短信转发服务</string>
+    <string name="notif_text">正在后台监听新短信</string>
+    <string name="notif_channel_name">短信转发保活</string>
+    <string name="notif_channel_desc">保持后台监听常驻</string>
+
+    <string-array name="security_entries">
+        <item>SSL/TLS（常用端口 465）</item>
+        <item>STARTTLS（常用端口 587）</item>
+        <item>不加密（端口 25）</item>
+    </string-array>
+</resources>
